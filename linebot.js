@@ -94,8 +94,8 @@ function sendWeeklyLearningSummary() {
 }
 
 function sendLineNotification(message) {
-  const accessToken =
-    "uUSijwsGt8BmKk7HG6oB97MLoyGqXZ1IrPNb6sIPMxkFPQbCvbr5GR1ZABrEmve5mItVO4k652yEHZ+sNlHNlhw+lZ24yxQRd6jlsveJVZr3vqAE9D9I2fCccGGHqajzeJxUV5I49obI11AoBf00OwdB04t89/1O/w1cDnyilFU=";
+  const scriptProperties = PropertiesService.getScriptProperties();
+  const accessToken = scriptProperties.getProperty("CHANNEL_ACCESS_TOKEN");
   const url = "https://api.line.me/v2/bot/message/broadcast";
   const payload = JSON.stringify({
     messages: [{ type: "text", text: message }],
