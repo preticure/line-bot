@@ -24,9 +24,15 @@
 - 毎週月曜朝7時
   一週間の学習時間を共有
   3000分（約50時間超えていたら褒める）
+  
+![image](https://github.com/preticure/line-bot/assets/151464878/dbce085e-e0b4-46bb-9632-a00a4806eeca)
 
+  
 ## 課題
 
 - ~~token~~とURLが剥き出しだからなんとかする
 - userIdを取得して私だけに送信できるようにしたい
   （userIdが取得出来すbroadcastで送信している）
+- 一週間分の合計学習時間0になってる問題
+- 総学習時間
+
